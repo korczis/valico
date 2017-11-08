@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ArrayBuilder` struct in crate `jsonway`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ArrayBuilder">
+
+    <title>jsonway::array_builder::ArrayBuilder - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ArrayBuilder</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>jsonway</a>::<wbr><a href='index.html'>array_builder</a></p><script>window.sidebarCurrent = {name: 'ArrayBuilder', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>jsonway</a>::<wbr><a href='index.html'>array_builder</a>::<wbr><a class="struct" href=''>ArrayBuilder</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/jsonway/array_builder.rs.html#9-14' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ArrayBuilder {
+    pub array: <a class="type" href="../../jsonway/array_builder/type.JsonArray.html" title="type jsonway::array_builder::JsonArray">JsonArray</a>,
+    pub null: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>,
+    pub skip: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>,
+    pub root: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id="structfield.array" class="structfield small-section-header">
+                           <a href="#structfield.array" class="anchor field"></a>
+                           <span id="array.v" class='invisible'>
+                           <code>array: <a class="type" href="../../jsonway/array_builder/type.JsonArray.html" title="type jsonway::array_builder::JsonArray">JsonArray</a></code>
+                           </span></span><span id="structfield.null" class="structfield small-section-header">
+                           <a href="#structfield.null" class="anchor field"></a>
+                           <span id="null.v" class='invisible'>
+                           <code>null: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code>
+                           </span></span><span id="structfield.skip" class="structfield small-section-header">
+                           <a href="#structfield.skip" class="anchor field"></a>
+                           <span id="skip.v" class='invisible'>
+                           <code>skip: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code>
+                           </span></span><span id="structfield.root" class="structfield small-section-header">
+                           <a href="#structfield.root" class="anchor field"></a>
+                           <span id="root.v" class='invisible'>
+                           <code>root: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;</code>
+                           </span></span>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#17-106' title='goto source code'>[src]</a></span></h3>
+<div class='docblock'><p>Use ArrayBuilder to produce JSON arrays</p>
+</div><div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>pub fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#19-26' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.from_json' class="method"><span id='from_json.v' class='invisible'><code>pub fn <a href='#method.from_json' class='fnname'>from_json</a>(array: <a class="enum" href="../../serde_json/value/enum.Value.html" title="enum serde_json::value::Value">Value</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#29-39' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Initialize builder with initial value.</p>
+</div><h4 id='method.build' class="method"><span id='build.v' class='invisible'><code>pub fn <a href='#method.build' class='fnname'>build</a>&lt;F&gt;(builder: F) -&gt; <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#42-47' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create new ArrayBuilder, pass it to closure as mutable ref and return.</p>
+</div><h4 id='method.push_json' class="method"><span id='push_json.v' class='invisible'><code>pub fn <a href='#method.push_json' class='fnname'>push_json</a>(&amp;mut self, value: <a class="enum" href="../../serde_json/value/enum.Value.html" title="enum serde_json::value::Value">Value</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#50-52' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Push JSON value to array.</p>
+</div><h4 id='method.array' class="method"><span id='array.v-1' class='invisible'><code>pub fn <a href='#method.array' class='fnname'>array</a>&lt;F&gt;(&amp;mut self, builder: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#55-57' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create new array and push it.</p>
+</div><h4 id='method.object' class="method"><span id='object.v' class='invisible'><code>pub fn <a href='#method.object' class='fnname'>object</a>&lt;F&gt;(&amp;mut self, builder: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../jsonway/object_builder/struct.ObjectBuilder.html" title="struct jsonway::object_builder::ObjectBuilder">ObjectBuilder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#60-62' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create new object and push it</p>
+</div><h4 id='method.null' class="method"><span id='null.v-1' class='invisible'><code>pub fn <a href='#method.null' class='fnname'>null</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#66-68' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>It you call <code>null</code>, this array will be converted to null when converting
+to raw JSON value.</p>
+</div><h4 id='method.skip' class="method"><span id='skip.v-1' class='invisible'><code>pub fn <a href='#method.skip' class='fnname'>skip</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#71-73' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>It you call <code>skip</code>, this array will be skipped.</p>
+</div><h4 id='method.root' class="method"><span id='root.v-1' class='invisible'><code>pub fn <a href='#method.root' class='fnname'>root</a>(&amp;mut self, root: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#76-78' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_root' class="method"><span id='has_root.v' class='invisible'><code>pub fn <a href='#method.has_root' class='fnname'>has_root</a>(&amp;mut self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#80-82' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.unwrap' class="method"><span id='unwrap.v' class='invisible'><code>pub fn <a href='#method.unwrap' class='fnname'>unwrap</a>(self) -&gt; <a class="enum" href="../../serde_json/value/enum.Value.html" title="enum serde_json::value::Value">Value</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#85-95' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Move out internal JSON value.</p>
+</div></div><h3 id='impl-1' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a></code><a href='#impl-1' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#108-113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.push' class="method"><span id='push.v' class='invisible'><code>pub fn <a href='#method.push' class='fnname'>push</a>&lt;T:&nbsp;<a class="trait" href="../../serde/ser/trait.Serialize.html" title="trait serde::ser::Serialize">Serialize</a>&gt;(&amp;mut self, value: T)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#110-112' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Push to array something that can be converted to JSON.</p>
+</div></div><h3 id='impl-2' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a></code><a href='#impl-2' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#115-145' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.objects' class="method"><span id='objects.v' class='invisible'><code>pub fn <a href='#method.objects' class='fnname'>objects</a>&lt;A, T:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = A&gt;, F&gt;(&amp;mut self, iter: T, func: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.Fn.html" title="trait core::ops::function::Fn">Fn</a>(A, &amp;mut <a class="struct" href="../../jsonway/object_builder/struct.ObjectBuilder.html" title="struct jsonway::object_builder::ObjectBuilder">ObjectBuilder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#118-126' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Fill this array by objects builded from iterator.</p>
+</div><h4 id='method.arrays' class="method"><span id='arrays.v' class='invisible'><code>pub fn <a href='#method.arrays' class='fnname'>arrays</a>&lt;A, T:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = A&gt;, F&gt;(&amp;mut self, iter: T, func: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.Fn.html" title="trait core::ops::function::Fn">Fn</a>(A, &amp;mut <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#129-137' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.map' class="method"><span id='map.v' class='invisible'><code>pub fn <a href='#method.map' class='fnname'>map</a>&lt;A, T:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = A&gt;, F&gt;(&amp;mut self, iter: T, func: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.Fn.html" title="trait core::ops::function::Fn">Fn</a>(A) -&gt; <a class="enum" href="../../serde_json/value/enum.Value.html" title="enum serde_json::value::Value">Value</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#140-144' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Fill this array by JSON values builded from iterator.</p>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Serialize' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../serde/ser/trait.Serialize.html" title="trait serde::ser::Serialize">Serialize</a> for <a class="struct" href="../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a></code><a href='#impl-Serialize' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#147-153' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.serialize' class="method"><span id='serialize.v' class='invisible'><code>fn <a href='../../serde/ser/trait.Serialize.html#tymethod.serialize' class='fnname'>serialize</a>&lt;S&gt;(&amp;self, serializer: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>S) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, S::<a class="type" href="../../serde/ser/trait.Serializer.html#associatedtype.Error" title="type serde::ser::Serializer::Error">Error</a>&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;S: <a class="trait" href="../../serde/ser/trait.Serializer.html" title="trait serde::ser::Serializer">Serializer</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/jsonway/array_builder.rs.html#149-152' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Copy self to new JSON instance.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "jsonway";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

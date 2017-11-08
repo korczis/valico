@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Builder` struct in crate `valico`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Builder">
+
+    <title>valico::json_schema::builder::Builder - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Builder</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../index.html'>valico</a>::<wbr><a href='../index.html'>json_schema</a>::<wbr><a href='index.html'>builder</a></p><script>window.sidebarCurrent = {name: 'Builder', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>valico</a>::<wbr><a href='../index.html'>json_schema</a>::<wbr><a href='index.html'>builder</a>::<wbr><a class="struct" href=''>Builder</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#83-85' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Builder { /* fields omitted */ }</pre><div class='docblock'><p>Builder provides simple DSL to build Schema. It allows you not to use
+strings and raw JSON manipulation. It also prevent some kinds of spelling
+and type errors.</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#87-273' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>pub fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#88-92' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.id' class="method"><span id='id.v' class='invisible'><code>pub fn <a href='#method.id' class='fnname'>id</a>(&amp;mut self, url: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#94-96' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.ref_' class="method"><span id='ref_.v' class='invisible'><code>pub fn <a href='#method.ref_' class='fnname'>ref_</a>(&amp;mut self, url: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#98-100' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.schema' class="method"><span id='schema.v' class='invisible'><code>pub fn <a href='#method.schema' class='fnname'>schema</a>(&amp;mut self, url: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#102-104' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.default' class="method"><span id='default.v' class='invisible'><code>pub fn <a href='#method.default' class='fnname'>default</a>&lt;T&gt;(&amp;mut self, default: T) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="../../../serde/ser/trait.Serialize.html" title="trait serde::ser::Serialize">Serialize</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#106-108' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.multiple_of' class="method"><span id='multiple_of.v' class='invisible'><code>pub fn <a href='#method.multiple_of' class='fnname'>multiple_of</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#110-112' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.maximum' class="method"><span id='maximum.v' class='invisible'><code>pub fn <a href='#method.maximum' class='fnname'>maximum</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>, exclusive: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#114-119' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.minimum' class="method"><span id='minimum.v' class='invisible'><code>pub fn <a href='#method.minimum' class='fnname'>minimum</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>, exclusive: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#121-126' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.max_length' class="method"><span id='max_length.v' class='invisible'><code>pub fn <a href='#method.max_length' class='fnname'>max_length</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#128-130' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.min_length' class="method"><span id='min_length.v' class='invisible'><code>pub fn <a href='#method.min_length' class='fnname'>min_length</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#132-134' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.pattern' class="method"><span id='pattern.v' class='invisible'><code>pub fn <a href='#method.pattern' class='fnname'>pattern</a>(&amp;mut self, pattern: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#136-138' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.format' class="method"><span id='format.v' class='invisible'><code>pub fn <a href='#method.format' class='fnname'>format</a>(&amp;mut self, format: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#140-142' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.items_schema' class="method"><span id='items_schema.v' class='invisible'><code>pub fn <a href='#method.items_schema' class='fnname'>items_schema</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#144-146' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.items_array' class="method"><span id='items_array.v' class='invisible'><code>pub fn <a href='#method.items_array' class='fnname'>items_array</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.SchemaArray.html" title="struct valico::json_schema::builder::SchemaArray">SchemaArray</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#148-152' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.additional_items' class="method"><span id='additional_items.v' class='invisible'><code>pub fn <a href='#method.additional_items' class='fnname'>additional_items</a>(&amp;mut self, allow: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#154-156' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.additional_items_schema' class="method"><span id='additional_items_schema.v' class='invisible'><code>pub fn <a href='#method.additional_items_schema' class='fnname'>additional_items_schema</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#158-160' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.max_items' class="method"><span id='max_items.v' class='invisible'><code>pub fn <a href='#method.max_items' class='fnname'>max_items</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#162-164' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.min_items' class="method"><span id='min_items.v' class='invisible'><code>pub fn <a href='#method.min_items' class='fnname'>min_items</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#166-168' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.unique_items' class="method"><span id='unique_items.v' class='invisible'><code>pub fn <a href='#method.unique_items' class='fnname'>unique_items</a>(&amp;mut self, unique: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#170-172' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.max_properties' class="method"><span id='max_properties.v' class='invisible'><code>pub fn <a href='#method.max_properties' class='fnname'>max_properties</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#174-176' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.min_properties' class="method"><span id='min_properties.v' class='invisible'><code>pub fn <a href='#method.min_properties' class='fnname'>min_properties</a>(&amp;mut self, number: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#178-180' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.required' class="method"><span id='required.v' class='invisible'><code>pub fn <a href='#method.required' class='fnname'>required</a>(&amp;mut self, items: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#182-184' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.properties' class="method"><span id='properties.v' class='invisible'><code>pub fn <a href='#method.properties' class='fnname'>properties</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.SchemaHash.html" title="struct valico::json_schema::builder::SchemaHash">SchemaHash</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#186-190' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.pattern_properties' class="method"><span id='pattern_properties.v' class='invisible'><code>pub fn <a href='#method.pattern_properties' class='fnname'>pattern_properties</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.SchemaHash.html" title="struct valico::json_schema::builder::SchemaHash">SchemaHash</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#192-196' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.additional_properties' class="method"><span id='additional_properties.v' class='invisible'><code>pub fn <a href='#method.additional_properties' class='fnname'>additional_properties</a>(&amp;mut self, allow: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#198-200' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.additional_properties_schema' class="method"><span id='additional_properties_schema.v' class='invisible'><code>pub fn <a href='#method.additional_properties_schema' class='fnname'>additional_properties_schema</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#202-204' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.dependencies' class="method"><span id='dependencies.v' class='invisible'><code>pub fn <a href='#method.dependencies' class='fnname'>dependencies</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.Dependencies.html" title="struct valico::json_schema::builder::Dependencies">Dependencies</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#206-208' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.enum_' class="method"><span id='enum_.v' class='invisible'><code>pub fn <a href='#method.enum_' class='fnname'>enum_</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../jsonway/array_builder/struct.ArrayBuilder.html" title="struct jsonway::array_builder::ArrayBuilder">ArrayBuilder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#210-212' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.array' class="method"><span id='array.v' class='invisible'><code>pub fn <a href='#method.array' class='fnname'>array</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#214-216' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.boolean' class="method"><span id='boolean.v' class='invisible'><code>pub fn <a href='#method.boolean' class='fnname'>boolean</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#217-219' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.integer' class="method"><span id='integer.v' class='invisible'><code>pub fn <a href='#method.integer' class='fnname'>integer</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#220-222' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.number' class="method"><span id='number.v' class='invisible'><code>pub fn <a href='#method.number' class='fnname'>number</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#223-225' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.null' class="method"><span id='null.v' class='invisible'><code>pub fn <a href='#method.null' class='fnname'>null</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#226-228' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.object' class="method"><span id='object.v' class='invisible'><code>pub fn <a href='#method.object' class='fnname'>object</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#229-231' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.string' class="method"><span id='string.v' class='invisible'><code>pub fn <a href='#method.string' class='fnname'>string</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#232-234' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.type_' class="method"><span id='type_.v' class='invisible'><code>pub fn <a href='#method.type_' class='fnname'>type_</a>(&amp;mut self, type_: <a class="enum" href="../../../valico/json_schema/enum.PrimitiveType.html" title="enum valico::json_schema::PrimitiveType">PrimitiveType</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#235-237' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.types' class="method"><span id='types.v' class='invisible'><code>pub fn <a href='#method.types' class='fnname'>types</a>(&amp;mut self, types: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[</a><a class="enum" href="../../../valico/json_schema/enum.PrimitiveType.html" title="enum valico::json_schema::PrimitiveType">PrimitiveType</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">]</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#238-240' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.all_of' class="method"><span id='all_of.v' class='invisible'><code>pub fn <a href='#method.all_of' class='fnname'>all_of</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.SchemaArray.html" title="struct valico::json_schema::builder::SchemaArray">SchemaArray</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#242-246' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.any_of' class="method"><span id='any_of.v' class='invisible'><code>pub fn <a href='#method.any_of' class='fnname'>any_of</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.SchemaArray.html" title="struct valico::json_schema::builder::SchemaArray">SchemaArray</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#248-252' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.one_of' class="method"><span id='one_of.v' class='invisible'><code>pub fn <a href='#method.one_of' class='fnname'>one_of</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.SchemaArray.html" title="struct valico::json_schema::builder::SchemaArray">SchemaArray</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#254-258' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.not' class="method"><span id='not.v' class='invisible'><code>pub fn <a href='#method.not' class='fnname'>not</a>&lt;F&gt;(&amp;mut self, build: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#260-262' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.build' class="method"><span id='build.v' class='invisible'><code>pub fn <a href='#method.build' class='fnname'>build</a>&lt;F&gt;(build: F) -&gt; <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#264-268' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.into_json' class="method"><span id='into_json.v' class='invisible'><code>pub fn <a href='#method.into_json' class='fnname'>into_json</a>(self) -&gt; <a class="enum" href="../../../serde_json/value/enum.Value.html" title="enum serde_json::value::Value">Value</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#270-272' title='goto source code'>[src]</a></span></h4>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Serialize' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../../serde/ser/trait.Serialize.html" title="trait serde::ser::Serialize">Serialize</a> for <a class="struct" href="../../../valico/json_schema/builder/struct.Builder.html" title="struct valico::json_schema::builder::Builder">Builder</a></code><a href='#impl-Serialize' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#275-279' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.serialize' class="method"><span id='serialize.v' class='invisible'><code>fn <a href='../../../serde/ser/trait.Serialize.html#tymethod.serialize' class='fnname'>serialize</a>&lt;S&gt;(&amp;self, serializer: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>S) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, S::<a class="type" href="../../../serde/ser/trait.Serializer.html#associatedtype.Error" title="type serde::ser::Serializer::Error">Error</a>&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;S: <a class="trait" href="../../../serde/ser/trait.Serializer.html" title="trait serde::ser::Serializer">Serializer</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/valico/json_schema/builder.rs.html#276-278' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Serializes this value into this serializer.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "valico";
+    </script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["ObjectScopeSerializer","Provides functionality to create custom JSON presenters for your structs."],["ObjectSerializer","Provides functionality to create custom JSON presenters for your structs."],["Serializer","Provides functionality to create custom JSON presenters for your structs."]]});
