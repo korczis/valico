@@ -14,7 +14,7 @@ build = "build.rs"
 regex = "0.1"
 lazy_static = "0.2"
 url = "1"
-# jsonway = "1.0"
+jsonway = { git = "https://github.com/korczis/jsonway.git", branch = "serde-1.0" }
 uuid = {version = "0.3", features = ["v4"]}
 phf = "0.7"
 typeable = "0.1"
@@ -28,5 +28,3 @@ version = "0.7"
 [[test]]
 name = "tests"
 
-[dependencies.jsonway]
-git = "https://github.com/korczis/jsonway.git"

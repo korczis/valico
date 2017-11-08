@@ -6,7 +6,7 @@ use std::any::TypeId;
 use std::mem;
 // use serde::{Serialize, Serializer};
 use serde::ser::{Serialize, Serializer};
-use serde_json::{Value, to_value, Map};
+use serde_json::{Value, to_value};
 
 pub trait ValicoError : Error + Send + Debug + Typeable {
     fn get_code(&self) -> &str;
